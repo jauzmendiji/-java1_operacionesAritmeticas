@@ -8,7 +8,7 @@ public class Main {
 
 	public static void main (String args[]) {
 
-		int numero1, numero2, resultadoSuma, resultadoResta;
+		int numero1, numero2, resultadoMulti, resultadoDiv;
 		Arithmetic operaciones = new Arithmetic();
 		
 		Scanner sc = new Scanner(System.in);
@@ -18,11 +18,11 @@ public class Main {
 		System.out.print("ingresa otro número: ");
 		numero2 = sc.nextInt();
 
-		resultadoSuma = operaciones.sum(numero1, numero2);
-		resultadoResta = operaciones.rest(numero1, numero2);
+		resultadoMulti = operaciones.multi(numero1, numero2);
+		resultadoDiv = operaciones.div(numero1, numero2);
 
-		System.out.println("\nEl resultado de la SUMA es: " + resultadoSuma);
-		System.out.println("\nEl resultado de la RESTA es: " + resultadoResta);
+		System.out.println("\nEl resultado de la MULTIPLICACION es: " + resultadoMulti);
+		System.out.println("\nEl resultado de la DIVISION es: " + resultadoDiv);
 	
 		System.out.println("\n\nEGUN ONA IZAN!!\n");
 	}
